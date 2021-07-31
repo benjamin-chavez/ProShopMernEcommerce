@@ -1,0 +1,8 @@
+Setup:
+  cmd:  yarn create react-app my-app
+
+Git Repo:
+Remove the git repo because it is in the front end and we want it in the root
+  cmd: rm -rf .git
+
+  move the .git file into the root as well.
