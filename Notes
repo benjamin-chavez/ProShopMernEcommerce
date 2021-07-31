@@ -1,8 +1,20 @@
 Setup:
   cmd:  yarn create react-app my-app
+  cmd:  yarn add styled-components
 
-Git Repo:
-Remove the git repo because it is in the front end and we want it in the root
-  cmd: rm -rf .git
+  Git Repo:
+  Remove the git repo because it is in the front end and we want it in the root
+    cmd: rm -rf .git
 
-  move the .git file into the root as well.
+    move the .git file into the root as well.
+
+  cmd:  yarn add react-bootstrap
+
+  cmd: yarn add react-router-dom
+  cmd: yarn add react-router-bootstrap
+
+
+
+
+Misc.
+* Using react dev tools is good if you are using the context API, but since we are using redux, we will use the redux dev tools
