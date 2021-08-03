@@ -1,6 +1,7 @@
 Setup:
   cmd:  yarn create react-app my-app
   cmd:  yarn add styled-components
+  cmd:  yarn add axios
 
   Git Repo:
   Remove the git repo because it is in the front end and we want it in the root
