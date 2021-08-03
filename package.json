@@ -4,12 +4,19 @@
   "description": "MERN Shopping cart app",
   "main": "server.js",
   "scripts": {
-    "start": "node backend/server"
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "yarn --cwd ./frontend run start",
+    "dev": "concurrently \"yarn run server\" \"yarn run client\""
   },
   "repository": "https://github.com/bmchavez/ProShopMernEcommerce.git",
   "author": "Ben Chavez <ben.m.chavez@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.12"
   }
 }
