@@ -13,6 +13,10 @@ Setup:
   cmd: yarn add react-router-dom
   cmd: yarn add react-router-bootstrap
 
+  From the Root:
+  cmd:  yarn init
+  cmd:  yarn add express
+
 
 
 
