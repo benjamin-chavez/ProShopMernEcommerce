@@ -17,8 +17,9 @@ Setup:
   From the Root:
   cmd:  yarn init
   cmd:  yarn add express
-  cmd: yarn add --dev nodemon
-  cmd: yarn add --dev concurrently
+  cmd:  yarn add --dev nodemon
+  cmd:  yarn add --dev concurrently
+  cmd:  yarn add dotenv
 
 
 
