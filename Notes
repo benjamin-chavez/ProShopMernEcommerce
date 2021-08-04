@@ -22,6 +22,7 @@ Setup:
   cmd:  yarn add dotenv
   cmd:  yarn add mongoose
   cmd:  yarn add colors
+  cmd:  yarn add bcryptjs
 
 
 
