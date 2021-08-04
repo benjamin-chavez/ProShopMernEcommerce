@@ -21,6 +21,7 @@ Setup:
   cmd:  yarn add --dev concurrently
   cmd:  yarn add dotenv
   cmd:  yarn add mongoose
+  cmd:  yarn add colors
 
 
 
