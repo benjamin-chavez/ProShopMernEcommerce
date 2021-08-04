@@ -1,0 +1,7 @@
+Database Resources:
+
+  User
+
+  Products
+
+  Orders
