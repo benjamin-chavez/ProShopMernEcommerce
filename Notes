@@ -1,7 +1,12 @@
 Setup:
+  From the frontend:
   cmd:  yarn create react-app my-app
   cmd:  yarn add styled-components
   cmd:  yarn add axios
+  cmd:  yarn add redux
+  cmd:  yarn add react-redux
+  cmd:  yarn add redux-thunk
+  cmd:  yarn add redux-devtools-extension
 
   Git Repo:
   Remove the git repo because it is in the front end and we want it in the root
@@ -30,3 +35,4 @@ Setup:
 
 Misc.
 * Using react dev tools is good if you are using the context API, but since we are using redux, we will use the redux dev tools
+
