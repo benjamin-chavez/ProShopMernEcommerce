@@ -23,6 +23,7 @@ Setup:
   cmd:  yarn add mongoose
   cmd:  yarn add colors
   cmd:  yarn add bcryptjs
+  cmd:  yarn add express-async-handler
 
 
 
