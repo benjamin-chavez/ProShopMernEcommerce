@@ -37,3 +37,8 @@ Setup:
 Misc.
 * Using react dev tools is good if you are using the context API, but since we are using redux, we will use the redux dev tools
 
+
+
+
+TODO:
+ - Review exactly what mongoose is
