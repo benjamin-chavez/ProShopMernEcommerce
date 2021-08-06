@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
-// import Footer from './components/Footer';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import HomeScreen from './Screens/HomeScreen';
@@ -10,6 +9,7 @@ import CartScreen from './Screens/CartScreen';
 import LoginScreen from './Screens/LoginScreen';
 import RegisterScreen from './Screens/RegisterScreen';
 import ProfileScreen from './Screens/ProfileScreen';
+import ShippingScreen from './Screens/ShippingScreen';
 
 const App = () => {
   return (
@@ -22,6 +22,7 @@ const App = () => {
           <Route path='/profile' component={ProfileScreen} />
           <Route path='/product/:id' component={ProductScreen} />
           <Route path='/cart/:id?' component={CartScreen} />
+          <Route path='/shipping' component={ShippingScreen} />
           <Route path='/' component={HomeScreen} exact />
         </Container>
       </main>
