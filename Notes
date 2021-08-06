@@ -37,6 +37,9 @@ Setup:
 Misc.
 * Using react dev tools is good if you are using the context API, but since we are using redux, we will use the redux dev tools
 
+* When you want to bring redux state into a component, you need to import useSelector from 'react-redux'
+* When you want to call and action on redux state, you need to import useDispatch from 'react-redux'
+
 
 
 
