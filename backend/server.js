@@ -9,6 +9,7 @@ import connectDB from './config/db.js';
 // import products from './data/products.js';
 
 import productRoutes from './routes/productRoutes.js';
+import userRoutes from './routes/userRoutes.js';
 
 dotenv.config();
 
@@ -16,21 +17,14 @@ connectDB();
 
 const app = express();
 
+app.use(express.json());
+
 app.get('/', (req, res) => {
   res.send('API us running....');
 });
 
 app.use('/api/products', productRoutes);
-// The following 2 requests were moved to productRoutes.js
-// app.get('/api/products', (req, res) => {
-//   res.json(products);
-// });
-
-// app.get('/api/products/:id', (req, res) => {
-//   const product = products.find((product) => product._id === req.params.id);
-//   res.json(product);
-// });
-
+app.use('/api/users', userRoutes);
 // Calling middleware
 app.use(notFound);
 
