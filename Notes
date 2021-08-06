@@ -41,4 +41,12 @@ Misc.
 
 
 TODO:
- - Review exactly what mongoose is
+  - Review exactly what mongoose is
+  - React Hooks
+    - In general, what exactly is a hook?
+    - useState
+    - useEffect
+  - When importing in react, why do some things need to be in curly braces and others dont? ie:
+      "import {Link} from 'react-router-dom';
+      vs.
+      "import Item from '../items';
