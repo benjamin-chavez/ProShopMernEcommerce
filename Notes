@@ -7,6 +7,7 @@ Setup:
   cmd:  yarn add react-redux
   cmd:  yarn add redux-thunk
   cmd:  yarn add redux-devtools-extension
+  cmd:  yarn add react-paypal-button-v2
 
   Git Repo:
   Remove the git repo because it is in the front end and we want it in the root
@@ -53,6 +54,7 @@ TODO:
       "import {Link} from 'react-router-dom';
       vs.
       "import Item from '../items';
+  - Review how async await works and how thunk works by putting an async function in the body of another function (i think it does that?).
 
   
 
