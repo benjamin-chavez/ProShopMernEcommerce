@@ -55,6 +55,7 @@ TODO:
       vs.
       "import Item from '../items';
   - Review how async await works and how thunk works by putting an async function in the body of another function (i think it does that?).
+  - why do we use the underscore for "._id" again?
 
   
 
@@ -69,3 +70,16 @@ TODO:
   - when clearing the database, if i register a new user with the same name as a previous user, the data pulls from local storage as if the user already existed.
   - clearing the database does not clear local storage.
   
+
+
+
+WORKFLOW:
+  Backend:
+    1) Add controller function
+    2) Add Route
+  Frontent
+    1) Add constants
+    2) Add Reducers
+    3) Add Reducer to store 
+    4) Add Actions
+    5) Add functionality to the screen so user can perform the new action
