@@ -7,8 +7,11 @@ import CheckoutSteps from '../components/CheckoutSteps';
 
 const PlaceOrderScreen = () => {
   const cart = useSelector((state) => state.cart);
-  const addDecimals = (num) => {
-    return (Math.round(num * 100) / 100).toFixed(2);
+  const formatDollars = (number) => {
+    return number.toLocaleString('en-US', {
+      style: 'currency',
+      currency: 'USD',
+    });
   };
 
   // Calculate prices
@@ -16,9 +19,8 @@ const PlaceOrderScreen = () => {
     (acc, item) => acc + item.price * item.qty,
     0
   );
-
   cart.shippingPrice = cart.itemsPrice < 100 ? 0 : 10;
-  cart.taxPrice = addDecimals(Number((0.15 * cart.itemsPrice).toFixed(2)));
+  cart.taxPrice = 0.15 * cart.itemsPrice;
   cart.totalPrice =
     Number(cart.itemsPrice) +
     Number(cart.shippingPrice) +
@@ -95,25 +97,25 @@ const PlaceOrderScreen = () => {
               <ListGroup.Item>
                 <Row>
                   <Col>Items</Col>
-                  <Col>{cart.itemsPrice}</Col>
+                  <Col>{formatDollars(cart.itemsPrice)}</Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
                 <Row>
                   <Col>Shipping</Col>
-                  <Col>{cart.shippingPrice}</Col>
+                  <Col>{formatDollars(cart.shippingPrice)}</Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
                 <Row>
                   <Col>Tax</Col>
-                  <Col>{cart.taxPrice}</Col>
+                  <Col>{formatDollars(cart.taxPrice)}</Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
                 <Row>
                   <Col>Total</Col>
-                  <Col>{cart.totalPrice}</Col>
+                  <Col>{formatDollars(cart.totalPrice)}</Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
