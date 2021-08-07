@@ -53,3 +53,16 @@ TODO:
       "import {Link} from 'react-router-dom';
       vs.
       "import Item from '../items';
+
+  
+
+  BUGS:
+  - if you run the server with a user already logged in via localStorage, then when you try to create an order, you get an error that says "Cannot read property '_id' of null".
+  - Fix all currencies to fixed decimal place of 2
+  - fix currency formatting on 
+      - cart screen
+      - product show screen
+  - Duplicate items in cart from local localStorage
+  - when clearing the database, if i register a new user with the same name as a previous user, the data pulls from local storage as if the user already existed.
+  - clearing the database does not clear local storage.
+  
