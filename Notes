@@ -62,6 +62,7 @@ TODO:
   - fix currency formatting on 
       - cart screen
       - product show screen
+      - order screen
   - Duplicate items in cart from local localStorage
   - when clearing the database, if i register a new user with the same name as a previous user, the data pulls from local storage as if the user already existed.
   - clearing the database does not clear local storage.
