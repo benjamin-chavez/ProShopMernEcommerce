@@ -72,6 +72,11 @@ TODO:
   - Duplicate items in cart from local localStorage
   - when clearing the database, if i register a new user with the same name as a previous user, the data pulls from local storage as if the user already existed.
   - clearing the database does not clear local storage.
+  - Image upload 
+      - saves the image to the database before the product is actually updated
+      - when a product is deleted the image is not deleted. (solving this might solve the previous image upload bug too)
+  - Two loaders show up on the /admin/productlist screen.
+
   
 
 
