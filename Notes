@@ -31,6 +31,7 @@ Setup:
   cmd:  yarn add bcryptjs
   cmd:  yarn add express-async-handler
   cmd:  yarn add jsonwebtoken
+  cmd:  yarn add multer
 
 
 
@@ -40,6 +41,7 @@ Misc.
 
 * When you want to bring redux state into a component, you need to import useSelector from 'react-redux'
 * When you want to call and action on redux state, you need to import useDispatch from 'react-redux'
+
 
 
 
@@ -56,6 +58,7 @@ TODO:
       "import Item from '../items';
   - Review how async await works and how thunk works by putting an async function in the body of another function (i think it does that?).
   - why do we use the underscore for "._id" again?
+  - For future reference, it looks like you could use Amazon S3 buckets for cloud storage. You could use this for image uploads similar to cloudinary. Wondering if this could potentially be the route for ableton file storage too?
 
   
 
