@@ -5,7 +5,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import Message from '../components/Message';
 import Loader from '../components/Loader';
 import { listOrders } from '../actions/orderActions';
-import Product from '../components/Product';
 
 const OrderListScreen = ({ history }) => {
   const dispatch = useDispatch();
@@ -59,7 +58,7 @@ const OrderListScreen = ({ history }) => {
                 </td>
                 <td>
                   {order.isDelivered ? (
-                    order.DeliveredAt.substring(0, 10)
+                    order.deliveredAt.substring(0, 10)
                   ) : (
                     <i className='fas fa-times' style={{ color: 'red' }}></i>
                   )}

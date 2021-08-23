@@ -64,6 +64,7 @@ TODO:
   - database cart persists either in local storage or on database even after user is deleted
   - cart is not cleared when order is placed
   - my orderlist is not updated on redirect after order is placed.
+  - Review that hacking vid to see if the user token is safe or not
 
   
 
