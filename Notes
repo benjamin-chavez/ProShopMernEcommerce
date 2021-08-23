@@ -59,6 +59,11 @@ TODO:
   - Review how async await works and how thunk works by putting an async function in the body of another function (i think it does that?).
   - why do we use the underscore for "._id" again?
   - For future reference, it looks like you could use Amazon S3 buckets for cloud storage. You could use this for image uploads similar to cloudinary. Wondering if this could potentially be the route for ableton file storage too?
+  - "add moment to clean up the dates" brad said this. find out what moment is
+  - look up url naming conventions. should it be '/orders/:id' or '/order/:id'
+  - database cart persists either in local storage or on database even after user is deleted
+  - cart is not cleared when order is placed
+  - my orderlist is not updated on redirect after order is placed.
 
   
 
@@ -75,6 +80,7 @@ TODO:
   - Image upload 
       - saves the image to the database before the product is actually updated
       - when a product is deleted the image is not deleted. (solving this might solve the previous image upload bug too)
+      - an error message/danger alert is not shown if the file type is not an image. Instead it allows the client to save the new product with a default image, which it should not do.
   - Two loaders show up on the /admin/productlist screen.
 
   
@@ -85,6 +91,7 @@ WORKFLOW:
   Backend:
     1) Add controller function
     2) Add Route
+    3) Add Model Routes to server.js (only if not already added for an existing route)
   Frontent
     1) Add constants
     2) Add Reducers
