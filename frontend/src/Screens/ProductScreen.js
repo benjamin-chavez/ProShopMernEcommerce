@@ -92,7 +92,7 @@ const ProductScreen = ({ history, match }) => {
               </ListGroup>
             </Col>
             <Col md={3}>
-              <Card>
+              <Card className='mb-3'>
                 <ListGroup variant='flush'>
                   <ListGroup.Item>
                     <Row>
@@ -172,7 +172,7 @@ const ProductScreen = ({ history, match }) => {
                   )}
                   {userInfo ? (
                     <Form onSubmit={submitRatingHandler}>
-                      <Form.Group controlId='rating'>
+                      <Form.Group controlId='rating' className='mb-3'>
                         <Form.Label>Rating</Form.Label>
                         <Form.Control
                           as='select'
@@ -187,7 +187,7 @@ const ProductScreen = ({ history, match }) => {
                           <option value='5'>5 - Excellent</option>
                         </Form.Control>
                       </Form.Group>
-                      <Form.Group controlId='comment'>
+                      <Form.Group controlId='comment' className='mb-3'>
                         <Form.Label>Comment</Form.Label>
                         <Form.Control
                           as='textarea'
