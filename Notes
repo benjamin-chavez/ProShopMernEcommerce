@@ -23,7 +23,7 @@ Setup:
   From the Root:
   cmd:  yarn init
   cmd:  yarn add express
-  cmd:  yarn add --dev nodemon
+  cmd:  yarn add --dev nodemons
   cmd:  yarn add --dev concurrently
   cmd:  yarn add dotenv
   cmd:  yarn add mongoose
@@ -43,7 +43,7 @@ Misc.
 * When you want to bring redux state into a component, you need to import useSelector from 'react-redux'
 * When you want to call and action on redux state, you need to import useDispatch from 'react-redux'
 
-
+*When creating submitHandlers, you use preventDefault when you are submitting a from. You could probably spend some time figuring out why this is exactly.
 
 
 
@@ -66,6 +66,7 @@ TODO:
   - cart is not cleared when order is placed
   - my orderlist is not updated on redirect after order is placed.
   - Review that hacking vid to see if the user token is safe or not
+  - add edit and delete actions for reviews
 
   
 
