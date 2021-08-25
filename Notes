@@ -32,6 +32,7 @@ Setup:
   cmd:  yarn add express-async-handler
   cmd:  yarn add jsonwebtoken
   cmd:  yarn add multer
+  cmd:  yarn add morgan
 
 
 
