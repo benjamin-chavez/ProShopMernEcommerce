@@ -14,7 +14,7 @@
     "dev": "concurrently \"yarn run server\" \"yarn run client\"",
     "data:import": "node backend/seeder",
     "data:destroy": "node backend/seeder -d",
-    "heroku-postbuild": "YARN_PRODUCTION=false yarn install --cwd ./frontend && yarn run build --cwd ./frontend"
+    "heroku-postbuild": "YARN_PRODUCTION=false yarn --cwd ./frontend install   &&  yarn --cwd ./frontend run build"
   },
   "repository": "https://github.com/bmchavez/ProShopMernEcommerce.git",
   "author": "Ben Chavez <ben.m.chavez@gmail.com>",
