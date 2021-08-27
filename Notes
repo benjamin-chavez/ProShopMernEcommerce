@@ -8,6 +8,7 @@ Setup:
   cmd:  yarn add redux-thunk
   cmd:  yarn add redux-devtools-extension
   cmd:  yarn add react-paypal-button-v2
+  cmd:  yarn add react-helmet
 
   Git Repo:
   Remove the git repo because it is in the front end and we want it in the root
