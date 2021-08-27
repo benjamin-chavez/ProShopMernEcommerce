@@ -23,8 +23,8 @@ const Header = () => {
           <LinkContainer to='/'>
             <Navbar.Brand>ProShop</Navbar.Brand>
           </LinkContainer>
-          <Navbar.Toggle aria-controls='navbarScroll' />
-          <Navbar.Collapse id='basic-navbar-nav '>
+          <Navbar.Toggle aria-controls='navbarScroll' className='mb-2' />
+          <Navbar.Collapse id='basic-navbar-nav'>
             <Route render={({ history }) => <SearchBox history={history} />} />
             <Nav className='ms-auto'>
               <LinkContainer to='/cart'>

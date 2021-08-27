@@ -67,6 +67,16 @@ TODO:
   - my orderlist is not updated on redirect after order is placed.
   - Review that hacking vid to see if the user token is safe or not
   - add edit and delete actions for reviews
+  - How do the spread operate work and why exactly do we need it:
+      - {[...Array(pages).keys()].map()}
+  - review async await in js in general and specifally the placement of each of those keywords in functions
+  - types of js function styles
+  - Is there a good methodology behind ordering the routes in react app.js?
+  - Difference between:
+      - import { Link } from 'react-router-dom';
+      AND
+      - import { LinkContainer } from 'react-router-bootstrap';
+  - 
 
   
 
