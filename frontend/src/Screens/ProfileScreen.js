@@ -6,6 +6,7 @@ import Message from '../components/Message';
 import Loader from '../components/Loader';
 import { getUserDetails, updateUserProfile } from '../actions/userActions';
 import { listUserOrders } from '../actions/orderActions';
+import { USER_UPDATE_PROFILE_RESET } from '../constants/userConstants';
 
 const ProfileScreen = ({ location, history }) => {
   const [name, setName] = useState('');
@@ -28,19 +29,24 @@ const ProfileScreen = ({ location, history }) => {
   const orderListUser = useSelector((state) => state.orderListUser);
   const { loading: loadingOrders, error: errorOrders, orders } = orderListUser;
 
-  useEffect(() => {
-    if (!userInfo) {
-      history.push('/login');
-    } else {
-      if (!user.name) {
-        dispatch(getUserDetails('profile'));
-        dispatch(listUserOrders());
+  useEffect(
+    () => {
+      if (!userInfo) {
+        history.push('/login');
       } else {
-        setName(user.name);
-        setEmail(user.email);
+        if (!user || !user.name || success) {
+          dispatch({ type: USER_UPDATE_PROFILE_RESET });
+          dispatch(getUserDetails('profile'));
+          dispatch(listUserOrders());
+        } else {
+          setName(user.name);
+          setEmail(user.email);
+        }
       }
-    }
-  }, [dispatch, history, userInfo, user]);
+    },
+    [dispatch, history, userInfo, user],
+    success
+  );
 
   const submitHandler = (e) => {
     e.preventDefault();
